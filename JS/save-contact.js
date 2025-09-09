@@ -38,7 +38,7 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:MOHAMED ABDULRASHEED AHMED
+FN:MOHAMED SHEHATA
 TITLE:Sales Manager
 ORG:RISE Properties
 TEL;TYPE=WORK,VOICE:+971555199755
@@ -55,7 +55,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'MOHAMED_ABDELRASHEED_AHMED.vcf';
+  a.download = 'MOHAMED SHEHATA.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -66,4 +66,5 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
 
